@@ -12,7 +12,7 @@ A ffmeg demo use objective c and swfit mixed
         - 还要添加库`libbz2.1.0` 不添加会报BZ开头的错误
 
 -------------
--> 杂七杂八
+- 杂七杂八
   
   ffmpeg版本为2.8~
   
