@@ -1,6 +1,6 @@
 # ffmpegDemo_ios
 A ffmeg demo use objective c and swfit mixed
-
+-------------
 - FFmpeg集成
     - 编译.a静态库
     - 导入.a静态库和头文件
@@ -12,6 +12,7 @@ A ffmeg demo use objective c and swfit mixed
         - 还要添加库`libbz2.1.0` 不添加会报BZ开头的错误
 
 -------------
+-> 杂七杂八
   
   ffmpeg版本为2.8~
   
