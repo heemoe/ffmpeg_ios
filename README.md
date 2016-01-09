@@ -1,6 +1,17 @@
 # ffmpegDemo_ios
 A ffmeg demo use objective c and swfit mixed
 
+- FFmpeg集成
+    - 编译.a静态库
+    - 导入.a静态库和头文件
+        - include下的文件夹应该导入真实文件夹,不是group
+    - build setting中的一些设置
+        - 需要在header search path中设置代码目录 `$(PROJECT_DIR)/ffmpegDemo`
+        - 以及library search path`$(PROJECT_DIR)/ffmpegDemo`
+        - 以及oher link flag中添加`-liconv` `-lz` 不然会报错误,大约20个
+        - 还要添加库`libbz2.1.0` 不添加会报BZ开头的错误
+
+-------------
   
   ffmpeg版本为2.8~
   
