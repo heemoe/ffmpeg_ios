@@ -404,7 +404,7 @@
 			baseConfigurationReference = B1A2B0786793B219DE7AFED8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ffmpegDemo",
 					"$(PROJECT_DIR)",
@@ -454,11 +454,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ffmpegDemo",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/ffmpegDemo",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-liconv",
@@ -498,7 +497,7 @@
 			baseConfigurationReference = 036CBEFA459A6EE8F0BB24C2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ffmpegDemo",
 					"$(PROJECT_DIR)",
@@ -548,9 +547,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ffmpegDemo",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/ffmpegDemo",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
