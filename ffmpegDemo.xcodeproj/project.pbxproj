@@ -16,8 +16,6 @@
 		0AE3ECF41C3CC4B300D9BCE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3ECF21C3CC4B300D9BCE6 /* Main.storyboard */; };
 		0AE3ECF61C3CC4B300D9BCE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3ECF51C3CC4B300D9BCE6 /* Assets.xcassets */; };
 		0AE3ECF91C3CC4B300D9BCE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3ECF71C3CC4B300D9BCE6 /* LaunchScreen.storyboard */; };
-		0AE3ED041C3CC4B300D9BCE6 /* ffmpegDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3ED031C3CC4B300D9BCE6 /* ffmpegDemoTests.swift */; };
-		0AE3ED0F1C3CC4B400D9BCE6 /* ffmpegDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3ED0E1C3CC4B400D9BCE6 /* ffmpegDemoUITests.swift */; };
 		0AE3EDB71C3CE50600D9BCE6 /* libavcodec in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EDB01C3CE50600D9BCE6 /* libavcodec */; };
 		0AE3EDB81C3CE50600D9BCE6 /* libavdevice in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EDB11C3CE50600D9BCE6 /* libavdevice */; };
 		0AE3EDB91C3CE50600D9BCE6 /* libavfilter in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EDB21C3CE50600D9BCE6 /* libavfilter */; };
@@ -31,27 +29,12 @@
 		0AE3EDC81C3CEBF600D9BCE6 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EDC11C3CEBF600D9BCE6 /* libavformat.a */; };
 		0AE3EDC91C3CEBF600D9BCE6 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EDC21C3CEBF600D9BCE6 /* libavutil.a */; };
 		0AE3EDCA1C3CEBF600D9BCE6 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EDC31C3CEBF600D9BCE6 /* libswresample.a */; };
-		0AE3EDCB1C3CEBF600D9BCE6 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EDC41C3CEBF600D9BCE6 /* libswscale.a */; };
+		0AE3EDCB1C3CEBF600D9BCE6 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EDC41C3CEBF600D9BCE6 /* libswscale.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		D968B0C12D7FFDC4DA90821E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4010CB8387683A681CC2F359 /* libPods.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0AE3ED001C3CC4B300D9BCE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AE3ECE31C3CC4B300D9BCE6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AE3ECEA1C3CC4B300D9BCE6;
-			remoteInfo = ffmpegDemo;
-		};
-		0AE3ED0B1C3CC4B300D9BCE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AE3ECE31C3CC4B300D9BCE6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AE3ECEA1C3CC4B300D9BCE6;
-			remoteInfo = ffmpegDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		036CBEFA459A6EE8F0BB24C2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		0A3D9FA21C3DF93B00531EE3 /* XZDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDecoder.h; sourceTree = "<group>"; };
 		0A3D9FA31C3DF93B00531EE3 /* XZDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDecoder.m; sourceTree = "<group>"; };
 		0AC66C971C3E427300343D81 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -63,12 +46,6 @@
 		0AE3ECF51C3CC4B300D9BCE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AE3ECF81C3CC4B300D9BCE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE3ECFA1C3CC4B300D9BCE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AE3ECFF1C3CC4B300D9BCE6 /* ffmpegDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ffmpegDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AE3ED031C3CC4B300D9BCE6 /* ffmpegDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ffmpegDemoTests.swift; sourceTree = "<group>"; };
-		0AE3ED051C3CC4B300D9BCE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AE3ED0A1C3CC4B300D9BCE6 /* ffmpegDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ffmpegDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AE3ED0E1C3CC4B400D9BCE6 /* ffmpegDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ffmpegDemoUITests.swift; sourceTree = "<group>"; };
-		0AE3ED101C3CC4B400D9BCE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AE3ED931C3CD85900D9BCE6 /* ffmpegDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ffmpegDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		0AE3EDB01C3CE50600D9BCE6 /* libavcodec */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libavcodec; sourceTree = "<group>"; };
 		0AE3EDB11C3CE50600D9BCE6 /* libavdevice */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libavdevice; sourceTree = "<group>"; };
@@ -87,6 +64,8 @@
 		0AE3EDCC1C3CEEF600D9BCE6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0AE3EDCE1C3CEF2D00D9BCE6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0AE3EDDC1C3D1EB100D9BCE6 /* war3end.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = war3end.mp4; sourceTree = "<group>"; };
+		4010CB8387683A681CC2F359 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A2B0786793B219DE7AFED8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,20 +82,7 @@
 				0AE3EDC51C3CEBF600D9BCE6 /* libavcodec.a in Frameworks */,
 				0AE3EDCA1C3CEBF600D9BCE6 /* libswresample.a in Frameworks */,
 				0AE3EDC81C3CEBF600D9BCE6 /* libavformat.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AE3ECFC1C3CC4B300D9BCE6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AE3ED071C3CC4B300D9BCE6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D968B0C12D7FFDC4DA90821E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,9 +97,9 @@
 				0AE3EDCE1C3CEF2D00D9BCE6 /* AVFoundation.framework */,
 				0AE3EDCC1C3CEEF600D9BCE6 /* libz.tbd */,
 				0AE3ECED1C3CC4B300D9BCE6 /* ffmpegDemo */,
-				0AE3ED021C3CC4B300D9BCE6 /* ffmpegDemoTests */,
-				0AE3ED0D1C3CC4B400D9BCE6 /* ffmpegDemoUITests */,
 				0AE3ECEC1C3CC4B300D9BCE6 /* Products */,
+				7F960455E7F8A7D49202A895 /* Pods */,
+				1CF1EABF9B6F984AC1D5D0AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,8 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				0AE3ECEB1C3CC4B300D9BCE6 /* ffmpegDemo.app */,
-				0AE3ECFF1C3CC4B300D9BCE6 /* ffmpegDemoTests.xctest */,
-				0AE3ED0A1C3CC4B300D9BCE6 /* ffmpegDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,24 +127,6 @@
 				0AE3ECFA1C3CC4B300D9BCE6 /* Info.plist */,
 			);
 			path = ffmpegDemo;
-			sourceTree = "<group>";
-		};
-		0AE3ED021C3CC4B300D9BCE6 /* ffmpegDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				0AE3ED031C3CC4B300D9BCE6 /* ffmpegDemoTests.swift */,
-				0AE3ED051C3CC4B300D9BCE6 /* Info.plist */,
-			);
-			path = ffmpegDemoTests;
-			sourceTree = "<group>";
-		};
-		0AE3ED0D1C3CC4B400D9BCE6 /* ffmpegDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0AE3ED0E1C3CC4B400D9BCE6 /* ffmpegDemoUITests.swift */,
-				0AE3ED101C3CC4B400D9BCE6 /* Info.plist */,
-			);
-			path = ffmpegDemoUITests;
 			sourceTree = "<group>";
 		};
 		0AE3ED9C1C3CE33E00D9BCE6 /* FFmpeg */ = {
@@ -212,6 +158,23 @@
 			name = include;
 			sourceTree = "<group>";
 		};
+		1CF1EABF9B6F984AC1D5D0AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4010CB8387683A681CC2F359 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F960455E7F8A7D49202A895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1A2B0786793B219DE7AFED8 /* Pods.debug.xcconfig */,
+				036CBEFA459A6EE8F0BB24C2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AE3ED131C3CC4B400D9BCE6 /* Build configuration list for PBXNativeTarget "ffmpegDemo" */;
 			buildPhases = (
+				59382E8201D21989EA7B22D8 /* Check Pods Manifest.lock */,
 				0AE3ECE71C3CC4B300D9BCE6 /* Sources */,
 				0AE3ECE81C3CC4B300D9BCE6 /* Frameworks */,
 				0AE3ECE91C3CC4B300D9BCE6 /* Resources */,
+				774A78210AE5B15EC2CC69B2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,42 +196,6 @@
 			productName = ffmpegDemo;
 			productReference = 0AE3ECEB1C3CC4B300D9BCE6 /* ffmpegDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0AE3ECFE1C3CC4B300D9BCE6 /* ffmpegDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AE3ED161C3CC4B400D9BCE6 /* Build configuration list for PBXNativeTarget "ffmpegDemoTests" */;
-			buildPhases = (
-				0AE3ECFB1C3CC4B300D9BCE6 /* Sources */,
-				0AE3ECFC1C3CC4B300D9BCE6 /* Frameworks */,
-				0AE3ECFD1C3CC4B300D9BCE6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0AE3ED011C3CC4B300D9BCE6 /* PBXTargetDependency */,
-			);
-			name = ffmpegDemoTests;
-			productName = ffmpegDemoTests;
-			productReference = 0AE3ECFF1C3CC4B300D9BCE6 /* ffmpegDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0AE3ED091C3CC4B300D9BCE6 /* ffmpegDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AE3ED191C3CC4B400D9BCE6 /* Build configuration list for PBXNativeTarget "ffmpegDemoUITests" */;
-			buildPhases = (
-				0AE3ED061C3CC4B300D9BCE6 /* Sources */,
-				0AE3ED071C3CC4B300D9BCE6 /* Frameworks */,
-				0AE3ED081C3CC4B300D9BCE6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0AE3ED0C1C3CC4B300D9BCE6 /* PBXTargetDependency */,
-			);
-			name = ffmpegDemoUITests;
-			productName = ffmpegDemoUITests;
-			productReference = 0AE3ED0A1C3CC4B300D9BCE6 /* ffmpegDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -280,14 +209,6 @@
 				TargetAttributes = {
 					0AE3ECEA1C3CC4B300D9BCE6 = {
 						CreatedOnToolsVersion = 7.2;
-					};
-					0AE3ECFE1C3CC4B300D9BCE6 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 0AE3ECEA1C3CC4B300D9BCE6;
-					};
-					0AE3ED091C3CC4B300D9BCE6 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 0AE3ECEA1C3CC4B300D9BCE6;
 					};
 				};
 			};
@@ -305,8 +226,6 @@
 			projectRoot = "";
 			targets = (
 				0AE3ECEA1C3CC4B300D9BCE6 /* ffmpegDemo */,
-				0AE3ECFE1C3CC4B300D9BCE6 /* ffmpegDemoTests */,
-				0AE3ED091C3CC4B300D9BCE6 /* ffmpegDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,21 +249,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AE3ECFD1C3CC4B300D9BCE6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AE3ED081C3CC4B300D9BCE6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59382E8201D21989EA7B22D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		774A78210AE5B15EC2CC69B2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AE3ECE71C3CC4B300D9BCE6 /* Sources */ = {
@@ -357,36 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AE3ECFB1C3CC4B300D9BCE6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AE3ED041C3CC4B300D9BCE6 /* ffmpegDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AE3ED061C3CC4B300D9BCE6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AE3ED0F1C3CC4B400D9BCE6 /* ffmpegDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0AE3ED011C3CC4B300D9BCE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AE3ECEA1C3CC4B300D9BCE6 /* ffmpegDemo */;
-			targetProxy = 0AE3ED001C3CC4B300D9BCE6 /* PBXContainerItemProxy */;
-		};
-		0AE3ED0C1C3CC4B300D9BCE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AE3ECEA1C3CC4B300D9BCE6 /* ffmpegDemo */;
-			targetProxy = 0AE3ED0B1C3CC4B300D9BCE6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0AE3ECF21C3CC4B300D9BCE6 /* Main.storyboard */ = {
@@ -446,7 +355,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -484,6 +393,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -491,11 +401,53 @@
 		};
 		0AE3ED141C3CC4B400D9BCE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A2B0786793B219DE7AFED8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ffmpegDemo",
 					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/UriParser-cpp\"",
+					"\"${PODS_ROOT}/Headers/Public/UriParser-cpp/UriParser\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/api/iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/filters\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/filters/Basic\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/mixers\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/mixers/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/mixers/iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/rtmp\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/sources\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/sources/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/sources/iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/stream\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/stream/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/system\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/system/h264\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/system/pixelBuffer\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/system/pixelBuffer/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/transforms\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/transforms/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/transforms/RTMP\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/transforms/iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/boost\"",
+					"\"${PODS_ROOT}/Headers/Public/glm\"",
+					"\"${PODS_ROOT}/Headers/Public/glm/core\"",
+					"\"${PODS_ROOT}/Headers/Public/glm/gtc\"",
+					"\"${PODS_ROOT}/Headers/Public/glm/gtx\"",
+					"\"${PODS_ROOT}/Headers/Public/glm/virtrev\"",
+					"${PODS_ROOT}/boost",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
 				);
 				INFOPLIST_FILE = ffmpegDemo/Info.plist;
 				LD_NO_PIE = YES;
@@ -504,10 +456,35 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ffmpegDemo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-liconv",
 					"-lz",
+					"-ObjC",
+					"-l\"Pods-UriParser-cpp\"",
+					"-l\"Pods-VideoCore\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"VideoToolbox\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gdmob.ffmpegDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,11 +495,53 @@
 		};
 		0AE3ED151C3CC4B400D9BCE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036CBEFA459A6EE8F0BB24C2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ffmpegDemo",
 					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/UriParser-cpp\"",
+					"\"${PODS_ROOT}/Headers/Public/UriParser-cpp/UriParser\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/api/iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/filters\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/filters/Basic\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/mixers\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/mixers/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/mixers/iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/rtmp\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/sources\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/sources/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/sources/iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/stream\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/stream/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/system\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/system/h264\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/system/pixelBuffer\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/system/pixelBuffer/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/transforms\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/transforms/Apple\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/transforms/RTMP\"",
+					"\"${PODS_ROOT}/Headers/Public/VideoCore/videocore/transforms/iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/boost\"",
+					"\"${PODS_ROOT}/Headers/Public/glm\"",
+					"\"${PODS_ROOT}/Headers/Public/glm/core\"",
+					"\"${PODS_ROOT}/Headers/Public/glm/gtc\"",
+					"\"${PODS_ROOT}/Headers/Public/glm/gtx\"",
+					"\"${PODS_ROOT}/Headers/Public/glm/virtrev\"",
+					"${PODS_ROOT}/boost",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
 				);
 				INFOPLIST_FILE = ffmpegDemo/Info.plist;
 				LD_NO_PIE = YES;
@@ -531,63 +550,40 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ffmpegDemo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-liconv",
 					"-lz",
+					"-ObjC",
+					"-l\"Pods-UriParser-cpp\"",
+					"-l\"Pods-VideoCore\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"VideoToolbox\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gdmob.ffmpegDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ffmpegDemo/ffmpegDemo-Bridging-Header.h";
 				VALID_ARCHS = "arm64 armv7 armv7s";
-			};
-			name = Release;
-		};
-		0AE3ED171C3CC4B400D9BCE6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ffmpegDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gdmob.ffmpegDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ffmpegDemo.app/ffmpegDemo";
-			};
-			name = Debug;
-		};
-		0AE3ED181C3CC4B400D9BCE6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ffmpegDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gdmob.ffmpegDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ffmpegDemo.app/ffmpegDemo";
-			};
-			name = Release;
-		};
-		0AE3ED1A1C3CC4B400D9BCE6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ffmpegDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gdmob.ffmpegDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ffmpegDemo;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		0AE3ED1B1C3CC4B400D9BCE6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ffmpegDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gdmob.ffmpegDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ffmpegDemo;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -608,24 +604,6 @@
 			buildConfigurations = (
 				0AE3ED141C3CC4B400D9BCE6 /* Debug */,
 				0AE3ED151C3CC4B400D9BCE6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0AE3ED161C3CC4B400D9BCE6 /* Build configuration list for PBXNativeTarget "ffmpegDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AE3ED171C3CC4B400D9BCE6 /* Debug */,
-				0AE3ED181C3CC4B400D9BCE6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0AE3ED191C3CC4B400D9BCE6 /* Build configuration list for PBXNativeTarget "ffmpegDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AE3ED1A1C3CC4B400D9BCE6 /* Debug */,
-				0AE3ED1B1C3CC4B400D9BCE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -205,7 +205,7 @@
     // output初始化
     avformat_alloc_output_context2(&ofmt_ctx, NULL, NULL, out_filename);
     if (!ofmt_ctx) {
-        ret = AVERROR_UNKNOWN;
+//        ret = AVERROR_UNKNOWN;
         return @"不能创建输出上下文";
     }
     // 初始化输出容器
@@ -215,7 +215,7 @@
         AVStream *in_stream = ifmt_ctx->streams[i];
         AVStream *out_stream = avformat_new_stream(ofmt_ctx, in_stream->codec->codec);
         if (!out_stream) {
-            ret = AVERROR_UNKNOWN;
+//            ret = AVERROR_UNKNOWN;
             return @"输出流创建失败";
         }
         // 复制上下文设置
@@ -298,6 +298,7 @@
     
     av_register_all();
     avformat_network_init();
+    
     if ((ret = avformat_open_input(&ifmt_ctx, in_filename, NULL, NULL)) < 0) {
         return @"打开失败";
     }

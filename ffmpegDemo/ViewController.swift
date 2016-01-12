@@ -31,8 +31,8 @@ class ViewController: UIViewController {
         let decoder = XZDecoder.init()
 //        let s = decoder.decoderWithInputFileName("war3end.mp4")
 //        let s = decoder.remuxerWithInputFileName("war3end.mp4", withOutFileName: "output.mov");
-        let s = decoder.streamerWithinputFile("war3end.mp4", outputUrlStr: "rtmp://w.gslb.lecloud.com/live/20160109300020899?sign=2a91f563ddfdceb81a93f9517305ecdb&tm=20160109113624")
-        // rtmp://w.gslb.lecloud.com/live/20160109300020899?sign=2a91f563ddfdceb81a93f9517305ecdb&tm=20160109113624
+        let s = decoder.streamerWithinputFile("war3end.mp4", outputUrlStr: "rtmp://w.gslb.lecloud.com/live/20160109300042599?sign=3e2387ccc6ad1c602a4144434036f775&tm=20160109150249")
+
         if let s = s{
             print(s)
             

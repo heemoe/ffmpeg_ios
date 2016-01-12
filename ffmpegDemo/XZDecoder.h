@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @interface XZDecoder : NSObject
 // 返回的都是路劲
 
