@@ -404,6 +404,7 @@
 			baseConfigurationReference = B1A2B0786793B219DE7AFED8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ffmpegDemo",
@@ -497,6 +498,7 @@
 			baseConfigurationReference = 036CBEFA459A6EE8F0BB24C2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ffmpegDemo",
