@@ -1,3 +1,2 @@
 platform :ios, '8.0'
-
-pod 'VideoCore'
+pod 'VideoCore', path: '/Users/gdmobzhx/Desktop/VideoCore/'

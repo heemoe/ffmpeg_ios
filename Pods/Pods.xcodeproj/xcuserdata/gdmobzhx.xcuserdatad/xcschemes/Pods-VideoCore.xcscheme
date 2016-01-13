@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92352BB8EB9DF9E731980517"
+               BlueprintIdentifier = "063C6AF840A5CDAD33F40E3F"
                BuildableName = "libPods-VideoCore.a"
                BlueprintName = "Pods-VideoCore"
                ReferencedContainer = "container:Pods.xcodeproj">

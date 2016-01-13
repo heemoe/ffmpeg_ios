@@ -1,1 +1,1 @@
-../../../../../../VideoCore/api/iOS/VCPreviewView.h
+../../../../../../../../../VideoCore/api/iOS/VCPreviewView.h

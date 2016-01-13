@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import NetworkExtension
 class ViewController: UIViewController {
 /**
 - FFmpeg集成
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         
         switch session.rtmpSessionState {
         case .None, .PreviewStarted, .Ended, .Error:
-            session.startRtmpSessionWithURL("rtmp://w.gslb.lecloud.com/live/20160112300099199?sign=cf7313c586ce2e36514caef7ab3d7bfb&tm=20160112153223", andStreamKey: "stream")
+            session.startRtmpSessionWithURL("rtmp://w.gslb.lecloud.com/live/20160113300015999?sign=1bc1642f7a719170e2103d2cf96289b4&tm=20160113095046", andStreamKey: "stream")
         default:
             session.endRtmpSession()
             break
