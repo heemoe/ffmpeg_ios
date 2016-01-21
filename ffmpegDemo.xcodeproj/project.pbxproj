@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A184EBF1C50D9990051E87B /* XZCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A184EBD1C50D9990051E87B /* XZCollectionViewCell.swift */; };
+		0A184EC01C50D9990051E87B /* XZCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A184EBE1C50D9990051E87B /* XZCollectionViewCell.xib */; };
+		0A184EC21C50DA130051E87B /* XZCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A184EC11C50DA130051E87B /* XZCollectionViewFlowLayout.swift */; };
 		0A3D9FA41C3DF93B00531EE3 /* XZDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D9FA31C3DF93B00531EE3 /* XZDecoder.m */; };
 		0AC66C981C3E427300343D81 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC66C971C3E427300343D81 /* libiconv.tbd */; };
 		0AC66C9A1C3E437C00343D81 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC66C991C3E437C00343D81 /* libbz2.1.0.tbd */; };
@@ -35,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		036CBEFA459A6EE8F0BB24C2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0A184EBD1C50D9990051E87B /* XZCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A184EBE1C50D9990051E87B /* XZCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCollectionViewCell.xib; sourceTree = "<group>"; };
+		0A184EC11C50DA130051E87B /* XZCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		0A3D9FA21C3DF93B00531EE3 /* XZDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDecoder.h; sourceTree = "<group>"; };
 		0A3D9FA31C3DF93B00531EE3 /* XZDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDecoder.m; sourceTree = "<group>"; };
 		0AC66C971C3E427300343D81 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -117,6 +123,9 @@
 				0AE3ED9C1C3CE33E00D9BCE6 /* FFmpeg */,
 				0AE3ECEE1C3CC4B300D9BCE6 /* AppDelegate.swift */,
 				0AE3ECF01C3CC4B300D9BCE6 /* ViewController.swift */,
+				0A184EC11C50DA130051E87B /* XZCollectionViewFlowLayout.swift */,
+				0A184EBD1C50D9990051E87B /* XZCollectionViewCell.swift */,
+				0A184EBE1C50D9990051E87B /* XZCollectionViewCell.xib */,
 				0A3D9FA21C3DF93B00531EE3 /* XZDecoder.h */,
 				0A3D9FA31C3DF93B00531EE3 /* XZDecoder.m */,
 				0AE3ED931C3CD85900D9BCE6 /* ffmpegDemo-Bridging-Header.h */,
@@ -241,6 +250,7 @@
 				0AE3EDBB1C3CE50600D9BCE6 /* libavutil in Resources */,
 				0AE3EDBA1C3CE50600D9BCE6 /* libavformat in Resources */,
 				0AE3EDB71C3CE50600D9BCE6 /* libavcodec in Resources */,
+				0A184EC01C50D9990051E87B /* XZCollectionViewCell.xib in Resources */,
 				0AE3EDBD1C3CE50600D9BCE6 /* libswscale in Resources */,
 				0AE3EDB81C3CE50600D9BCE6 /* libavdevice in Resources */,
 				0AE3EDBC1C3CE50600D9BCE6 /* libswresample in Resources */,
@@ -291,6 +301,8 @@
 			files = (
 				0A3D9FA41C3DF93B00531EE3 /* XZDecoder.m in Sources */,
 				0AE3ECF11C3CC4B300D9BCE6 /* ViewController.swift in Sources */,
+				0A184EC21C50DA130051E87B /* XZCollectionViewFlowLayout.swift in Sources */,
+				0A184EBF1C50D9990051E87B /* XZCollectionViewCell.swift in Sources */,
 				0AE3ECEF1C3CC4B300D9BCE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
