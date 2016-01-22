@@ -1,13 +1,14 @@
 //
 //  ViewController.swift
 //  ffmpegDemo
-//
+// 音频转码用 lame <<<<<<<<<<<<<<<<<<<<<<<<< 虽然ffmpeg也可以.
 //  Created by gdmobZHX on 16/1/6.
 //  Copyright © 2016年 gdmobZHX. All rights reserved.
 //
 
 import UIKit
 import NetworkExtension
+
 class ViewController: UIViewController{
 /**
 - FFmpeg集成
@@ -26,14 +27,23 @@ class ViewController: UIViewController{
     }
 
 // 成员变量
-    var session : VCSimpleSession  = VCSimpleSession(videoSize: CGSize(width: 1280, height: 720), frameRate: 30, bitrate: 1000000, useInterfaceOrientation: false)
+//    var session : VCSimpleSession  = VCSimpleSession(videoSize: CGSize(width: 1280, height: 720), frameRate: 30, bitrate: 1000000, useInterfaceOrientation: false)
     
-    let collection : UICollectionView = UICollectionView(frame:UIScreen.mainScreen().bounds,collectionViewLayout: UICollectionViewLayout())
+    let collection : UICollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: XZCollectionViewFlowLayout())
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        //regist
+        collection.registerNib(UINib(nibName: "XZCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+        
+        collection.frame = view.frame
+        collection.backgroundColor = UIColor.brownColor()
+        let layout = XZCollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 363, height: 608)
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 10
+        collection.collectionViewLayout = layout
         view.addSubview(collection)
         collection.delegate = self
         collection.dataSource = self
@@ -63,24 +73,24 @@ class ViewController: UIViewController{
         }
          *********** end ********** */
     }
-    deinit{
-        session.delegate = nil
-    }
+//    deinit{
+//        session.delegate = nil
+//    }
 }
-extension ViewController : VCSessionDelegate{
-    func connectionStatusChanged(sessionState: VCSessionState) {
-        switch session.rtmpSessionState{
-        case .Starting:
-            print("rtmpSessionState Connecting")
-        case .Started:
-            print("rtmpSessionState Connected")
-        case .Error:
-            print("rtmpSessionState ERROR")
-        default:
-            print("rtmpSessionState NONE")
-        }
-    }
-}
+//extension ViewController : VCSessionDelegate{
+//    func connectionStatusChanged(sessionState: VCSessionState) {
+//        switch session.rtmpSessionState{
+//        case .Starting:
+//            print("rtmpSessionState Connecting")
+//        case .Started:
+//            print("rtmpSessionState Connected")
+//        case .Error:
+//            print("rtmpSessionState ERROR")
+//        default:
+//            print("rtmpSessionState NONE")
+//        }
+//    }
+//}
 extension ViewController : UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -90,7 +100,8 @@ extension ViewController : UICollectionViewDataSource,UICollectionViewDelegate{
         return 4
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
+        // dequeue reusable cell by the identifiler resgined
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! XZCollectionViewCell
         cell.backgroundColor = UIColor.blueColor()
         return cell
     }

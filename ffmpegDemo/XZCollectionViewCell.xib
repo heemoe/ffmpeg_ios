@@ -1,18 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XZCollectionViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="XZCollectionViewCell" customModule="ffmpegDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="304"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="498" height="620"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAV-fc-Q6z">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.77531901430000005" blue="0.58485765519999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="76Q-yH-81Q"/>
+                            <constraint firstAttribute="height" constant="88" id="Syh-ls-ZgQ"/>
+                        </constraints>
+                        <state key="normal" title="Camera stream"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="76Q-yH-81Q"/>
+                                <exclude reference="Syh-ls-ZgQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="76Q-yH-81Q"/>
+                                <include reference="Syh-ls-ZgQ"/>
+                            </mask>
+                        </variation>
+                    </button>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <constraints>
+                <constraint firstItem="wAV-fc-Q6z" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="4SJ-4P-xvc"/>
+                <constraint firstItem="wAV-fc-Q6z" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="nf2-Ih-6o5"/>
+            </constraints>
+            <size key="customSize" width="498" height="620"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="wAV-fc-Q6z"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4SJ-4P-xvc"/>
+                    <exclude reference="nf2-Ih-6o5"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="wAV-fc-Q6z"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4SJ-4P-xvc"/>
+                    <include reference="nf2-Ih-6o5"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="mainButton" destination="wAV-fc-Q6z" id="3Oo-h6-RYh"/>
+            </connections>
+            <point key="canvasLocation" x="464" y="361"/>
         </collectionViewCell>
     </objects>
 </document>
