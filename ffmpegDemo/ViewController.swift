@@ -66,7 +66,7 @@ class ViewController: UIViewController{
         
         switch session.rtmpSessionState {
         case .None, .PreviewStarted, .Ended, .Error:
-            session.startRtmpSessionWithURL("rtmp://uni-rtmp-push.loli.video/live", andStreamKey: "568d083200b009a331c81f6a_851065?user=568d083200b009a331c81f6a&publishKey=8a49d5f5d721ba4a6fd08879670edfc259fd868b")
+            session.startRtmpSessionWithURL("rtmp://xxxxxxxxxxxxx", andStreamKey: "568d083200b009a331c81f6a_851065?user=568d083200b009a331c81f6a&publishKey=8a49d5f5d721ba4a6fd08879670edfc259fd868b")
         default:
             session.endRtmpSession()
             break
